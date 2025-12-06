@@ -1,0 +1,155 @@
+@import "content.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--def-color);
+    scroll-behavior: smooth;
+}
+
+:root {
+    --def-color: #fff;
+    --con-color: #312F31;
+    --prime-color: #F24405;
+    --sec-color: #569E9E;
+    --mid-color: #9EF8EE;
+
+    --button-color: #22BABB;
+    --card-color: #FFCB9A;
+
+}
+
+.navbar {
+    background: #312F31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 15px black;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.web-logo {
+    color: var(--def-color);
+    font-size: clamp(.8rem, 5vw, 1.8rem);
+}
+
+.logo p {
+    color: #ffffffa0;
+    font-size: clamp(.7rem, 5vw, 1.3rem);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    background: #F24405;
+    border-radius: 5px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--def-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    &:hover {
+        transition: 0.2s ease-in-out;
+        background: var(--button-color);
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background: #000;
+}
+
+.contact {
+    align-items: center;
+    gap: 50%;
+}
+
+.Clist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Clist a {
+    text-decoration: none;
+    color: var(--def-color);
+}
+
+.Glist {
+    display: flex;
+    gap: 15px;
+}
+
+@media only screen and (max-width:764px) {
+    .row1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutclip {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .c1 {
+        padding-top: 35%;
+    }
+    .content-intro {
+        height: 100%;
+        padding-top: 5%;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .content-intro img {
+        height: 100%;
+    }
+    .box-info {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-info a {
+        align-self: center;
+    }
+
+
+    .row1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+}
